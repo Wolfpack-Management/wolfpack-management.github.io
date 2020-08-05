@@ -2,3 +2,5 @@ theme: jekyll-theme-minimal
 title: Wolfpack Management
 description: '-'
 baseurl: /
+
+logo: ../assets/images/wpm-logo.png

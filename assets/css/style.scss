@@ -3,18 +3,28 @@
 
 @import "{{ site.theme }}";
 
+// ORANGE - #f7931e
+//   BLUE - #091f92
+
 *, html, body {
   padding: 0; margin: 0;
   box-sizing: border-box;
+
+  a:hover { font-weight: normal; }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 50px;
 
-  .site-title { flex-grow: 1; }
-  .site-description { display: none; }
+  .site-title {
+    flex-grow: 0;
+
+    .title { display: none; font-size: 2rem; }
+    .description { display: none; }
+  }
 
   .navigation {
     display: flex;
