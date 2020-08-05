@@ -21,7 +21,9 @@
         </div>
 
         {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Logo" />
+        <a href="{{ '/' | absolute_url }}">
+          <img src="{{ site.logo | relative_url }}" alt="Logo" />
+        </a>
         {% endif %}
 
         <div class="description">{{ site.description | default: site.github.project_tagline }}</div>
