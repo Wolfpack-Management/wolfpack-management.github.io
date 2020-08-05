@@ -10,6 +10,7 @@
   padding: 0; margin: 0;
   box-sizing: border-box;
 
+  a { color: #091f92; }
   a:hover { font-weight: normal; }
 }
 
@@ -22,6 +23,7 @@
   .site-title {
     flex-grow: 0;
 
+    .img { max-width: 100px; }
     .title { display: none; font-size: 2rem; }
     .description { display: none; }
   }
