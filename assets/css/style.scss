@@ -8,6 +8,18 @@
   box-sizing: border-box;
 }
 
-body {
-  & > * { padding: 20px; }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .site-title { flex-grow: 1; }
+  .site-description { display: none; }
+
+  .navigation {
+    display: flex;
+    list-style-type: none;
+
+    .nav-item { margin: 0 0.5rem; }
+  }
 }
