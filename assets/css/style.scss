@@ -12,12 +12,13 @@
 }
 
 a { color: #091f92; }
+a:hover { color: #f7931e; }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 5rem;
 
   .site-title {
     flex-grow: 0;
@@ -31,6 +32,29 @@ a { color: #091f92; }
     display: flex;
     list-style-type: none;
 
-    .nav-item { margin: 0 0.5rem; }
+    .nav-item {
+      margin: 0 0.5rem;
+
+      a {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        background-color: #eee;
+        display: inline-block;
+        padding: 0.5rem 0.8rem;
+        transition: all 0.4s;
+      }
+
+      &.current a, a:hover {
+        background-color: #fff;
+        color: #f7931e;
+        border-color: #f7931e;
+        font-weight: normal;
+      }
+    }
   }
+
+}
+
+.main-content {
+  margin: 0 5rem;
 }
